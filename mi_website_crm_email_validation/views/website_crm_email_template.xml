@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+     <template id="mi_website_crm_email_validation"
+              inherit_id="website_crm.contactus_form"
+              name="Contact Form (Opportunity) Validation" priority="99">
+              
+              <xpath expr="//input[@name='email_from']" position="attributes">
+                  <attribute name="class">form-control o_website_form_input email-validation</attribute>
+               </xpath>
+               </template> 
+               
+               
+                
+   <template id="assets_frontend_website_crm_email_validation" name="Website CRM Email Validation" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/mi_website_crm_email_validation/static/src/js/website_crm_email.js"/>
+
+
+            </xpath>
+        </template>
+        
+        </data>
+</odoo>
