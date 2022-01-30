@@ -10,7 +10,7 @@
 """,
     'author': "Makgys Incorporation Pvt. Ltd.",
      'license':  'Other proprietary',
-    'price': 30.00,
+    'price': 7.00,
     'currency': 'EUR',
     'version': '13.0.1.0',
     'depends': ['website','website_crm'],
