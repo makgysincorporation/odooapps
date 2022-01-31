@@ -12,6 +12,8 @@
     'version': '13.0.1.0',
     'depends': ['website','website_crm'],
      'images' :  ['static/description/Banner.png'],
+    'license': 'AGPL-3',
+
     'data': [
         'views/website_crm_email_template.xml',
     ],
