@@ -10,11 +10,8 @@
 """,
     'author': "Makgys Incorporation Pvt. Ltd.",
      'license':  'Other proprietary',
-    'price': 7.00,
-    'currency': 'EUR',
     'version': '13.0.1.0',
     'depends': ['website','website_crm'],
-    # 'qweb': ['static/src/xml/website_crm_email_message.xml'],
      'images' :  ['static/description/Banner.png'],
     'data': [
         'views/website_crm_email_template.xml',
