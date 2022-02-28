@@ -1,0 +1,32 @@
+<odoo>
+  <record id="mrp_weight_equivalent_mi_mrp_production_form_inherit" model="ir.ui.view">
+        <field name="name">mrp.weight_equivalent.mi.mrp.production.form.inherit</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            
+            
+           <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='components']/field[@name='move_raw_ids']/tree[1]/field[@name='lot_ids']" position="after">
+                <field name="weight_equivalent"/>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='finished_products']/field[@name='move_byproduct_ids']/tree[1]/field[@name='lot_ids']" position="after">
+                <field name="weight_equivalent"/>
+            </xpath>
+            <field name="move_byproduct_ids" position="after">
+                    <group class="oe_subtotal_footer oe_right">
+                        <field name="total_weight_bp"   attrs="{'invisible':[('state', 'not in', ('to_close','done'))]}"/>
+                        <field name="total_weight_fg"   attrs="{'invisible':[('state', 'not in', ('to_close','done'))]}"/>
+                        <field name="total_weight_finished" class="oe_subtotal_footer_separator" attrs="{'invisible':[('state', 'not in', ('to_close','done'))]}"/>
+                    <div class="oe_clear"/>
+                    </group>
+                    
+
+            </field>
+            <field name="move_raw_ids" position="after">
+                <group class="oe_subtotal_footer oe_right">
+                    <field name="total_weight_com" class="oe_subtotal_footer_spearator" attrs="{'invisible':[('state', 'not in', ('to_close','done'))]}"/>
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>
