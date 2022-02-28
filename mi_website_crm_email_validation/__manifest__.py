@@ -17,6 +17,8 @@
     'data': [
         'views/website_crm_email_template.xml',
     ],
+    'price': 20.0,
+    'currency': 'EUR',
     'installable': True,
     'auto_install': False,
 }
