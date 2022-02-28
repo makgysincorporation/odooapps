@@ -18,7 +18,7 @@
         'views/website_crm_email_template.xml',
     ],
     'price': 20.0,
-    'licence':'OPL-1'
+    'licence':'OPL-1',
     'currency': 'EUR',
     'installable': True,
     'auto_install': False,
