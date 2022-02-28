@@ -17,6 +17,9 @@ This module offers individual kg weight,total kg weight equivalent of product un
     'installable': True,
     'application': False,
     'license': 'OPL-1',
+    'images': [
+        'static/description/Banner.png'
+    ],
     'price': 15.0,
     'currency': 'EUR',
 }
