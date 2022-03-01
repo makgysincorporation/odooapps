@@ -5,7 +5,7 @@
     'description': '''
 This module offers individual kg weight,total kg weight equivalent of product unit in manufacture order finished product,component product line,
     by product product line ''',
-    'author': 'Makgys Incorporation Pvt Ltd',
+    'author': "Makgys Incorporation Pvt. Ltd.",
     'version': '14.0.1.0.0',
     'category': 'Manufacturing',
     'depends': [
