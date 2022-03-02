@@ -1,6 +1,6 @@
 
 {
-    'name': 'Partner Ledger In Contact',
+    'name': 'Partner Ledger From Contact',
     'summary': 'Adds smart button to view partner ledger from contact',
     'description': '''
 This module provide smart clickable button in partner through which general ledger can be viewed directly ''',
