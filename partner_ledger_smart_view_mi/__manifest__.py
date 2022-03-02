@@ -1,7 +1,7 @@
 
 {
     'name': 'Partner Ledger In Contact',
-    'summary': 'Adds smart button to view general ledger from contact',
+    'summary': 'Adds smart button to view partner ledger from contact',
     'description': '''
 This module provide smart clickable button in partner through which general ledger can be viewed directly ''',
     'author': 'Makgys Incorporation Pvt Ltd',
