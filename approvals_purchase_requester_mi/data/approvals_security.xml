@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+
+    <record id="group_second_approval_user" model="res.groups">
+        <field name="name">Initial Approver</field>
+        <field name="category_id" ref="base.module_category_human_resources_approvals"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('approvals.group_approval_user')])]"/>
+        <field name="comment">The user will be able to see second approvals created by first approver.</field>
+    </record>
+    
+    <record id="approvals.group_approval_manager" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_second_approval_user'))]"/>
+    </record>
+     
+</odoo>
