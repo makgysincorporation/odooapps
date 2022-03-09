@@ -6,17 +6,6 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class ApprovalCategoryInherit(models.Model):
-    _inherit = 'approval.category'
-
-    approval_type = fields.Selection(selection_add=[('initial_purchase', 'Create Initial RFQ\'s')])
-
-    @api.onchange('approval_type')
-    def _onchange_approval_type(self):
-        if self.approval_type == 'initial_purchase':
-            self.has_product = 'required'
-            self.has_quantity = 'required'
-
 class PurchaseOrderInherit(models.Model):
     _inherit = 'purchase.order'
 
