@@ -6,8 +6,8 @@
         <field name="arch" type="xml">
         
             <xpath expr="//button[@name='button_cancel']" position="before">
-                <button name="button_send_to_approver" groups="approvals_purchase_requester_mi.group_second_approval_user" type="object" states="initial_approve" string="Send To Approve" id="send_to_approve"/>
-                <button name="button_cancel_request" groups="approvals_purchase_requester_mi.group_second_approval_user" type="object" states="initial_approve" string="Cancel" id="send_to_cancel"/>
+                <button name="button_send_to_approver" groups="purchase_double_approvals_mi.group_second_approval_user" type="object" states="initial_approve" string="Send To Approve" id="send_to_approve"/>
+                <button name="button_cancel_request" groups="purchase_double_approvals_mi.group_second_approval_user" type="object" states="initial_approve" string="Cancel" id="send_to_cancel"/>
 
             </xpath>
 

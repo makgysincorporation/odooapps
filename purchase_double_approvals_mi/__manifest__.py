@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Approvals Purchase Requester",
+    'name': "Purchase Double Approvals",
 
     'summary': """
         Adds Extra layer of validation in purchase request
@@ -15,10 +15,9 @@
     'category': 'Purchase',
     'version': '14.0.1.0.0',
 
-    'depends': ['base','approvals','purchase'],
+    'depends': ['purchase'],
     
     'data': [
-        'data/approval_data.xml',
         'data/approvals_security.xml',
         'views/initial_approval_view.xml',
     ],
