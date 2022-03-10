@@ -15,7 +15,7 @@
     ],
     'license': 'OPL-1',
     'images': ['static/description/Banner.png'],
-    'price': 65.0,
+    'price': 60.0,
     'currency': 'EUR',
     'application': False,
     'installable': True,
